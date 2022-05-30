@@ -1,0 +1,11 @@
+function oddPosition(arr) {
+  let result = [];
+
+  for(let i = 1;i<arr.length;i+=2){
+  result.push(arr[i]*2);
+  }
+  return result.reverse().join(' ')
+
+ 
+}
+console.log(oddPosition([10, 15, 20, 25]));
