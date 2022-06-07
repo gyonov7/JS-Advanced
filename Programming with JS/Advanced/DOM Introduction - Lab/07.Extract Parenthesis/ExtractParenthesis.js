@@ -1,7 +1,7 @@
 function extract(content) {
 
     content = document.getElementById('content').textContent;
-    let pattern = /\(([A-z]+(\s[A-z]+\s[A-z]+)?)\)/g;
+    let pattern = /\(([^)]+)\)/g;
 
     let match = pattern.exec(content);
 let result = [];
