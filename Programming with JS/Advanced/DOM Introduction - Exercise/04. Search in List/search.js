@@ -1,13 +1,13 @@
 function search() {
   let searchField = document.getElementById("searchText").value;
   let matches = 0;
-  let list = document.querySelectorAll("ul#towns li");
+  let lists = document.querySelectorAll("ul#towns li");
 
   for (let element of list){
      element.style.fontWeight = 'normal';
      element.style.textDecoration = '';
   }
-  for (info of list) {
+  for (info of lists) {
     if (info.textContent.match(searchField)) {
       matches++;
       info.style.fontWeight = 'bold';
