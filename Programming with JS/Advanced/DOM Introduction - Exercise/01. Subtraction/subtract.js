@@ -1,8 +1,4 @@
 function subtract() {
-    let firstNum = document.getElementById('firstNumber').value;
-    let secondNum = document.getElementById('secondNumber').value;
-
-    let result = document.getElementById('result');
-
-    result.textContent = Number(firstNum)-Number(secondNum);
+   
+    document.getElementById('result').textContent = Number(document.getElementById('firstNumber').value)-Number(document.getElementById('secondNumber').value);
 }
